@@ -24,12 +24,6 @@ public class MessagingClient {
 		Socket clientSocket;
 		Connection connection = null;
 		
-		try {
-			clientSocket = new Socket(server, port);
-			connection = new Connection(clientSocket);
-		} catch(IOException e) {
-			e.printStackTrace();
-		}
 		return connection;
 	}
 }
